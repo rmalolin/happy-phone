@@ -39,7 +39,7 @@ export function useValidation() {
         receiverName: data.receiverName ?? '',
         receiverCity: data.receiverCity ?? '',
         cargoType: data.cargoType ?? 'standard',
-        weight: data.weight ?? 0,
+        weight: data.weight ?? 0.1,
       }
 
       const result = receiverSchema

@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-export const CARGO_TYPES = ['documents', 'fragile', 'standard'] as const
+const CARGO_TYPES = ['documents', 'fragile', 'standard'] as const
 export type CargoType = (typeof CARGO_TYPES)[number]
 
 export const cargoTypes: { value: CargoType; label: string }[] = [
